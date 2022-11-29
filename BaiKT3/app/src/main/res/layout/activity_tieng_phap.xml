@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_intro"
+    android:orientation="vertical"
+    tools:context=".TiengPhap">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#00FFFFFF"
+            android:drawableLeft="@drawable/ic_back"
+            app:cornerRadius="10dp" />
+
+        <TextView
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center"
+            android:text="Franch"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Nhập ví dụ: "
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/ed_Phap"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Nhập ngôn ngữ"
+            android:inputType="text"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLuuPhap"
+        android:layout_width="109dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#E8FFCE3B"
+        android:text="Lưu"
+        app:cornerRadius="10dp" />
+
+    <ListView
+        android:id="@+id/listPhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"/>
+
+
+</LinearLayout>
